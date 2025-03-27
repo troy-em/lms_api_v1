@@ -20,7 +20,7 @@ This service comprises of two modules
 ### Installation
 
 ```bash
-git clone https://github.com/your-repo/lms-api.git
+git clone https://github.com/troy-em/lms_api_v1.git
 cd lms-api
 npm install
 ```
