@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "title": "refreshToken",
+    "description": "The refreshToken schema",
+    "required": [
+        "token"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "integer",
+            "title": ""
+        },
+        "client_id": {
+            "$id": "#/properties/client_id",
+            "type": "integer",
+            "title": ""
+        },
+        "token": {
+            "$id": "#/properties/token",
+            "type": "string",
+            "title": ""
+        },
+        "expiry_date": {
+            "$id": "#/properties/expiry_date",
+            "type": "string",
+            "title": ""
+        },
+        "created_at": {
+            "$id": "#/properties/created_at",
+            "type": "string",
+            "title": "The creation date of the user."
+        },
+        "updated_at": {
+            "$id": "#/properties/updated_at",
+            "type": "string",
+            "title": "The date the user was last updated."
+        }
+    }
+}

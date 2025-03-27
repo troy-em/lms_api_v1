@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "title": "loan status",
+    "description": "The loan status schema",
+    "required": [
+        "loan_request_id"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "integer",
+            "title": "The database ID of the loan status."
+        },
+        "loan_request_id": {
+            "$id": "#/properties/loan_request_id",
+            "type": "integer",
+            "title": "The loan status loan_request_id"
+        },
+        "status_id": {
+            "$id": "#/properties/status_id",
+            "type": "integer",
+            "title": "The loan status status_id"
+        },
+        "remarks": {
+            "$id": "#/properties/remarks",
+            "type": "string",
+            "title": ""
+        },
+        "created_at": {
+            "$id": "#/properties/created_at",
+            "type": "string",
+            "title": "The creation date of the loan status."
+        },
+        "updated_at": {
+            "$id": "#/properties/updated_at",
+            "type": "string",
+            "title": "The date the loan status was last updated."
+        }
+    }
+}

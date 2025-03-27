@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "title": "loan payment",
+    "description": "The loan payment schema",
+    "required": [
+        "loan_request_id",
+        "amount"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "id": {
+            "$id": "#/properties/id",
+            "type": "integer",
+            "title": "The database ID of the loan payment."
+        },
+        "loan_request_id": {
+            "$id": "#/properties/loan_request_id",
+            "type": "integer",
+            "title": "The loan payment loan_request_id"
+        },
+        "amount": {
+            "$id": "#/properties/amount",
+            "type": "number",
+            "title": "The loan payment amount"
+        },
+        "created_at": {
+            "$id": "#/properties/created_at",
+            "type": "string",
+            "title": "The creation date of the loan payment."
+        },
+        "updated_at": {
+            "$id": "#/properties/updated_at",
+            "type": "string",
+            "title": "The date the loan payment was last updated."
+        }
+    }
+}
