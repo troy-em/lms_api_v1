@@ -231,7 +231,7 @@ async function processScoringBackground(loanRequestId, customerNumber, amount) {
                     customer_limit: scoreData.limitAmount
                 });
 
-            if (parseFloat(amount) > parseFloat(scoreData.limitAmount) && scoreData.exclusion !== "No Exclusion") {
+            if (parseFloat(amount) > parseFloat(scoreData.limitAmount) && scoreData.exclusion === "No Exclusion") {
                 // set failed
                 const statusName = "rejected";
                 const newStatus = await Status.query().where({ name: statusName }).first();

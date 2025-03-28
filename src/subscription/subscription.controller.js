@@ -39,19 +39,19 @@ exports.createSubscription = async (req, res) => {
         //
         // ..............* NOT WORKING *................ //
 
-        const customerExists = await GetCustomerKyc(req.body.customerNumber);
+        // const customerExists = await GetCustomerKyc(req.body.customerNumber);
 
-        if (!customerExists) {
-            return res.status(400).send({
-                message: 'Failed: Customer not registered with the bank !'
-            });
-        }
+        // if (!customerExists) {
+        //     return res.status(400).send({
+        //         message: 'Failed: Customer not registered with the bank !'
+        //     });
+        // }
 
-        if (customerExists.status !== "active") {
-            return res.status(400).send({
-                message: 'Failed: Customer is inactive !'
-            });
-        }
+        // if (customerExists.status !== "active") {
+        //     return res.status(400).send({
+        //         message: 'Failed: Customer is inactive !'
+        //     });
+        // }
 
         // ................................................... //
         //
